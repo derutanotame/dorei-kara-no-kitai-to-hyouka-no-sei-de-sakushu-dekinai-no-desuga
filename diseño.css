@@ -9,6 +9,7 @@ body {
   }
   
   header {
+    position: relative;
     background-color: rgba(0,0,0,0.7);
     padding: 20px;
     text-align: center;
@@ -19,6 +20,24 @@ body {
     z-index: 1000;
     backdrop-filter: blur(10px);
   }
+  
+.catalogo-btn {
+    position: absolute;
+    top: 15px;
+    right: 70px; /* Ajusta según la posición del icono de Facebook */
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.catalogo-btn:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
   
   main {
     display: flex;
@@ -31,15 +50,16 @@ body {
     min-width: 300px;
     padding: 20px;
   }
-   img {
+  .left img {
     width: 100%;
     height: auto;
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
     transition: transform 0.5s ease;
-    text-align: center;
   }
- 
+  .left img:hover {
+    transform: scale(1.08);
+  }
   .right h1 {
     font-size: 2em;
     margin-bottom: 20px;
